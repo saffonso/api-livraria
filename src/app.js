@@ -1,34 +1,22 @@
 import express from "express";
+import conectanaDB from "./config/dbConnect.js";
+import routes from "./routes/index.js"
 
+const conexao = await conectanaDB();
+
+
+
+conexao.on("error",(erro)=>{
+    console.log("erro de conexão", erro);
+})
+
+
+conexao.once("open", () =>{
+    console.log("conexão feita com sucesso");
+})
+ 
 const app = express();
-app.use(express.json()); //middleware
-
-const livros = [
-    {
-        "id":1,
-        "nome":"O senhor dos aneis"
-    },
-    {
-        "id":2,
-        "nome":"A meta"
-    }
-
-]
-
-function buscarLivro(id){
-    return livros.findIndex(livro => {
-        return Number(id) === livro.id;
-    })
-}
-
-
-app.get("/", (req,res) =>{
-    res.status(200).send("Curso de Node.js");
-})
-
-app.get("/livros",(req,res)=>{
-    res.status(200).json(livros);
-})
+routes(app);
 
 app.get("/livros/:id",(req,res)=>{
     const index = buscarLivro(req.params.id);

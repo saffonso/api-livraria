@@ -1,1 +1,1 @@
-# Projeto De Uma Api Para Livrarias
+# Projeto Api Para Livrarias
