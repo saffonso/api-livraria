@@ -16,22 +16,6 @@ Ela permite **cadastrar**, **editar**, **listar**, **buscar** e **remover** livr
 
 ---
 
-## 📁 Estrutura do Projeto
-
-📦 src \n
- ┣ 📂controller
- ┃ ┣ 📜 autorController.js
- ┃ ┗ 📜 livroController.js
- ┣ 📂models
- ┃ ┣ 📜 Autor.js
- ┃ ┗ 📜 Livro.js
- ┣ 📂routes
- ┃ ┣ 📜 autorRoutes.js
- ┃ ┗ 📜 livroRoutes.js
- ┗ 📜 server.js
-
----
-
 ## ⚙️ Como rodar o projeto localmente
 
 ### 1. Clone o repositório
@@ -119,6 +103,8 @@ Você pode usar o Postman para testar todas as rotas:
 ## 💡 Sugestões
 
 - Crie primeiro um autor e depois faça referencia do id dele no JSON quando for cadastrar um livro.
+
+---
 
 ## 🧑‍💻 Autor
 
