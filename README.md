@@ -18,7 +18,7 @@ Ela permite **cadastrar**, **editar**, **listar**, **buscar** e **remover** livr
 
 ## 📁 Estrutura do Projeto
 
-📦 src
+📦 src \n
  ┣ 📂controller
  ┃ ┣ 📜 autorController.js
  ┃ ┗ 📜 livroController.js
