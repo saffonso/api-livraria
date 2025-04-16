@@ -36,8 +36,8 @@ Ela permite **cadastrar**, **editar**, **listar**, **buscar** e **remover** livr
 
 ### 1. Clone o repositório
 
-git clone https://github.com/seu-usuario/nome-do-repo.git
-cd nome-do-repo
+git clone https://github.com/saffonso/api-livraria
+cd api-livraria
 
 ### 2. Instale as dependências
 
@@ -47,15 +47,13 @@ npm install
 
 Crie um arquivo `.env` e adicione:
 
-MONGODB_URI=mongodb://localhost:27017/livraria
-
-Ou utilize sua string do MongoDB Atlas, se preferir.
+DB_CONNECTION_STRING=sua_string_do_mongodb
 
 ### 4. Rode o servidor
 
 npm run dev
 
-O servidor iniciará em `http://localhost:3000` (ou na porta configurada).
+O servidor iniciará em `http://localhost:3000`.
 
 ---
 
@@ -118,13 +116,10 @@ Você pode usar o Postman para testar todas as rotas:
 
 ---
 
+## 💡 Sugestões
+
+- Crie primeiro um autor e depois faça referencia do id dele no JSON quando for cadastrar um livro.
+
 ## 🧑‍💻 Autor
 
-Desenvolvido por [Seu Nome](https://github.com/seu-usuario)  
-Entre em contato para dúvidas ou sugestões de melhorias!
-
----
-
-## 📝 Licença
-
-Este projeto está licenciado sob a Licença MIT.
+Desenvolvido por Santiago Affonso (https://github.com/saffonso)  
