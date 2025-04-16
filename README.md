@@ -1,6 +1,5 @@
 # 📚 API de Livraria
-
-Bem-vindo à API de Livraria!  
+  
 Esta aplicação foi desenvolvida com **Node.js**, **Express** e **MongoDB** para gerenciar livros e autores.  
 Ela permite **cadastrar**, **editar**, **listar**, **buscar** e **remover** livros e autores — tudo via requisições REST.
 
