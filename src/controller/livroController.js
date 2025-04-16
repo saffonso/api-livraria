@@ -57,6 +57,18 @@ class LivroController {
         
     };
 
+    static async searchLivroByEditora(req,res) {
+        const editora = req.query.editora;
+        try{
+            const livrosEncontrados = await livro.find({editora: editora});
+            res.status(200).json(livrosEncontrados);      
+        } catch(erro){
+            res.status(500).json({message: `${erro.message}`});
+        }
+        
+    };
+
+
 }
 
 export default LivroController;
